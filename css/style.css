@@ -323,7 +323,7 @@ color:#30bae7;
 .socialgrid a.mail:hover{
     background-color:#D44638;
 }
-.formsec ::placeholder {
+.formsec::placeholder {
     color:white;
     padding-left:20px;
     padding-top:10px;
