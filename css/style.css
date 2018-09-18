@@ -3,26 +3,29 @@ body{
     font-family: 'Titillium Web', sans-serif;
     margin:0 auto;
 }
-.Firstsec{
-    background-color:#87509c;
+.section{
     width: 100%;
     height: auto;
     text-align: center;
     padding-bottom:150px;
+    box-sizing: border-box;
+}
+.Firstsec{
+    padding-top:50px;
+    background-color:#87509c;
 }
 .logosection{
-   padding-top:50px;
-    width:1140px;
-    margin-bottom: 100px;
+   width:100%;
+   text-align: center;
 }
 .logoImage{
     float:left;
     width: 50%;
     height: auto;
-    text-align: center;
+    text-align: left; 
 }
 .FirstsecMenu{
-    float:right;
+    float:left;
     width: 50%;
     height:auto;
     text-align: right;
@@ -30,59 +33,64 @@ body{
 .clear{
     clear:both;
 }
-.Firstsec h1{
-    margin-top:50px;
+.Firstsec h3{
+    margin-top:120px;
+}
+.MenuNav{
+    text-align: center;
+    width:100%;
 }
 .MenuNav ul li {
     list-style-type: none;
     display:inline-block;
-    margin-left:30px;
+    margin-left:45px;
     font-size: 12pt;
 }
 .MenuNav ul li a{
     text-decoration:none;
     color:white;
+    text-transform: uppercase;
+}
+.MenuNav ul li a.active
+,.MenuNav ul li:hover{
+    border-bottom:1px solid white;
+
 }
 .secondsec{
     background-color:#17c2a4;
-    width: 100%;
-    height: auto;
 }
 
-.MenuNav ul li:hover{
-    text-decoration: underline;
-}
-.downsec{
-    text-align: center;
-}
+
 .buttonLink{
     margin-top:70px;
 }
 
 .buttonLink a{
      background-color:#eb7d4b;
-  
+     display:inline-block;
     text-decoration: none;
     color:white;
     font-size: 10pt;
-    padding: 20px 70px ;
-    border-bottom-style: inset;
-    border-bottom-width: 3px;
-    border-bottom-color:#c86a40;
-    border-radius:3px;
+    padding: 30px 75px ;
+    border-bottom:3px solid #c86a40;
+    box-sizing: border-box;
+    border-radius:5px;
+    transition-duration: 0.3s;
+    margin-top:50px;
 
+}
+.buttonLink a:hover{
+    background-color:#c86a40;
+    transition-duration: 0.3s;
 }
 .secondsec{
     background-color:#17c2a4;
-    width:100%;
-    height: auto;
-    padding-bottom: 120px;
 }
 .firstP{
     text-align: center;
     padding-top:110px;
 }
-.firstP h3{
+.h3{
     margin-top:0;
 }
 .firstP span{
@@ -91,28 +99,29 @@ body{
 .Grid{
     width:100%;
      margin-top:70px;
+     color:#f0fbf9;
+     text-align: center;
 }
-.firstRow{
+.teamgrid{
+    color:#3c4761;
+}
+.Row{
   width:100%;
 }
 .gridcol{
     width:25%;
     float: left;
-    text-align: center;
+}
+.gridcolimg{
+    width:100%
 }
 
 .lowersec p{
-    color:#f0fbf9;
-    text-align: center;
     font-size:16pt;
-
 }
 .thirdsec{
-    background-color:white;
+    background-color:#e7f1f8;
     color:#3c4761;
-    width:100%;
-    height: auto;
-    padding-bottom: 130px;
 }
 .secgridcol{
     width:25%;
@@ -120,73 +129,43 @@ body{
     text-align: center;
     line-height: 2px;
 }
-.secgridcol img{
+.teamgrid img{
     height: 180px;
     width:180px;
     border-radius:50%;
-}
-.SecGrid{
-    margin-top:130px;
-    width:100%;
 }
 .secgridcol .lowersec span{
     color:#5ec5eb;
     font-size:10pt;
     line-height:0.5pt;
 }
-.thirdgridcol{
-    width:25%;
-    float: left;
-    text-align: center;
-    margin-top:50px;
-}
-.socialgrid{
-    width:25%;
-    float: left;
-    text-align: center;
-    margin-top:50px;
-}
-.socialicons{
-
+.socialgrid a{
     background-color:#bdd1df;
     color:white;
-    height: 35px;
-    width:35px;
+    height: 30px;
+    width:30px;
     border-radius:50%;
-    display:inline-block;
+    display: inline-block;
+    line-height: 30px;
     text-align: center;
-    margin-right:10px;
-}
-.socialicons a {
-    padding-top: 10px;
-    display: grid;
 }
 .fourthsec{
     background-color:#ffdd99;
     color:#393939;
-    width:100%;
-    height: auto;
-padding-bottom: 130px;
 }
 .Fourthsecgrid{
-    width: 100%;
+    color:black;
+}
+.FifthFirstrow{
+    width:100%;
     height: auto;
     text-align: center;
-    margin-top:70px;
-}
-.Fifththsecgrid{
-    width: 100%;
-    height: auto;
-    text-align: center;
-    margin-top:70px;
-}
-.Fifthsecondrow{
-   padding-top:30px;
 }
 .Fcol{
     width:50%;
     height: auto;
     float:left;
+    margin-bottom: 53px;
 }
 .Fcol span{
     font-size:12;
@@ -198,35 +177,26 @@ padding-bottom: 130px;
 }
 .LoadButton a{
     background-color:#17c2a4;
-    color:white;
-    text-decoration:none;
-    padding: 20px 50px;
-    border-bottom-style: inset;
-    border-bottom-width: 3px;
     border-bottom-color:#14a58c;
-    border-radius:3px;
-
+}
+.LoadButton a:hover{
+    background-color:#14a58c;
 }
 .fifthSec{
     background-color:#d74680;
     color:white;
-    width:100%;  
-    padding-bottom:170px;
-    height: auto;
 }
-.Fifthsecondrow .Fcol img{
+.Fcol img{
     width:90px;
     height: 90px;
     border-radius: 50%;
     float: left;
     text-align: left;
 }
-.FifthFirstrow .Fcol img{
-    width:90px;
-    height: 90px;
-    border-radius: 50%;
-    float: left;
-    text-align: left;
+.Fourthsecgrid .Fcol img{
+    width:100%;
+height:auto;
+border-radius:0;
 }
 .Desc{
     width:calc(100% - 120px);
@@ -250,43 +220,36 @@ padding-bottom: 130px;
 }
 .container{
     text-align: center;
-    width:1140px;
+    width:1100px;
     height: auto;
     margin:0 auto;
 }
 .LastSec{
 background-color:#3c5498;
-width:100%;
-height: auto;
-padding-bottom:170px;
 }
 .Container .firstP span{
     color:#273a71;
 }
 .formsec{
+    margin:70px 250px;
     text-align: center;
-    margin-top:70px;
-    width:100%;
+    width:860px;
     height: auto;
-
 }
 .inputform{
     border:none;
     background-color:#273a71;
-    width:415px;
+    width:410px;
     height:50px;
-    margin-left:20px;
     border-radius: 3px;
-    color:white;
-    padding-left: 10px;
+    margin-right:0px;
+    margin-left: 17px;  
 }
-.formsec textarea{
+.txt {
     margin-top:30px;
-    color:white;
-    width:850px;
+    width:100%;
     height: 200px;
-   padding-left:20px;
-   border-radius: 3px;
+    border-radius: 3px;
 }
 .Container .firstP span{
     font-size:12pt;
@@ -298,13 +261,11 @@ padding-bottom:170px;
 
 .SendMessage a{
     background-color:#30bae7;
-    color:white;
-    text-decoration:none;
-    padding: 20px 50px;
-    border-bottom-style: inset;
-    border-bottom-width: 3px;
     border-bottom-color:#299ec5;
-    border-radius:3px;
+
+}
+.SendMessage a:hover{
+    background-color:#299ec5;
 }
 .footer{
     text-align: center;
@@ -341,4 +302,31 @@ color:#30bae7;
 }
 .FooterMenu ul li:last-child{
     padding-left:0;
+}
+.socialgrid a:hover{
+    transition-duration: .03s;
+}
+.socialgrid a.fa:hover{
+    background-color: #3B5998;
+}
+.firsth2{
+    margin-top:120px;
+    color:#eb7d4b;
+}
+
+.socialgrid a.tw:hover{
+    background-color:#0084FF;
+}
+.socialgrid a.li:hover{
+    background-color:#0077B5;
+}
+.socialgrid a.mail:hover{
+    background-color:#D44638;
+}
+.formsec ::placeholder {
+    color:white;
+    padding-left:20px;
+    padding-top:10px;
+    font-size: 10pt;
+    font-weight: lighter;
 }
